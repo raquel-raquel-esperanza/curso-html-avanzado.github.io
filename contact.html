@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+    <title>Documen</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <!--<div id="headercontainer"></div>-->
+    <header id="mi-encabezado">
+        <link rel="stylesheet" href="../styles.css">
+        <h1 class="titulo"> Curso de HTML</h1>
+        <p>Bienvenidos</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../about.html">Acerca de</a></li>
+                <li><a href="../contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+    
+    
+    <main>
+        <section class="contenido">
+            <h2> Cualquier duda e información que desees...
+            <tr><td> <hr>
+                </hr></h2>
+                <p>
+                Por favor contactanos:<p>
+                Telefono: 78582246<p>
+                Correo: queli1801gmail.com<p>
+                Correo: infoclassinsibo@gmail.com <p>
+                Facebook: Infoclass Insibo<p>
+
+                </p>
+              
+                </td></tr>
+            
+        </section>
+    </main>
+
+   <div id="footercontainer"></div>
+
+   <script>
+
+     // Selecciona el menú y el encabezado
+     const menu = document.querySelector("nav");
+    const header = document.querySelector("#mi-encabezado");
+
+    // Obtén la altura del encabezado
+    const headerHeight = header.offsetHeight;
+
+    // Función que cambia el color de fondo del menú cuando se desplaza
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > headerHeight) {
+            menu.style.backgroundColor = "rgb(50, 43, 150)"; // Cambia el color de fondo a azul
+        } else {
+            menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Vuelve al fondo transparente
+        }
+    });
+
+    </script>
+          
+    
+    
+</body>
+</html>
